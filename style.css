@@ -31,9 +31,13 @@
     overflow: hidden;
 }
 
+.show-caption{
+    display: block;
+}
+
 .slide-down{
     animation-name: slide-down;
-    animation-duration: 2s; 
+    animation-duration: 1s; 
 }
 
 
