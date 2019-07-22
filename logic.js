@@ -21,6 +21,8 @@ function activeSection(sectionElem){
     titleContainerElem.className += " active";
     console.log(captionElem);
     captionElem.className += " show-caption";  
+    captionElem.style.maxHeight = captionElem.scrollHeight + "px";
+    captionElem.style.padding = "15px";
 }
 
 function deactiveSection(sectionElem){
@@ -30,7 +32,9 @@ function deactiveSection(sectionElem){
 
     symbolElem.innerHTML = "+";
     titleContainerElem.className = "title-container";
-    captionElem.className = "caption slide-down"
+    captionElem.className = "caption"
+    captionElem.style.maxHeight = null;
+    captionElem.style.padding = "0px";
 
 }
 

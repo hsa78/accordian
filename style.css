@@ -11,6 +11,7 @@
 .title-container{
     display: flex;
     margin: 0;
+    overflow: hidden;
 }
 
 .active, .title-container:hover{
@@ -19,32 +20,19 @@
 }
 
 .plus-minus-btn{
-    left: 90%;
-    position: relative;
+    float: right;   
 }
 
 .caption{
-    display: none;
     background-color: white;
-    padding: 15px;
-    margin: 0;
     overflow: hidden;
+    margin: 0;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
 }
 
 .show-caption{
     display: block;
-}
-
-.slide-down{
-    animation-name: slide-down;
-    animation-duration: 1s; 
-}
-
-
-@keyframes slide-down{
-    0% {padding: 0px; height: 0px;}
-    70%{padding: 15px;}
-    100%{height: auto;}
 }
 
 
