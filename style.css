@@ -1,0 +1,46 @@
+
+
+#section-container{
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    top: 30%;
+    background-color: #d2d2d2;
+}
+
+.title-container{
+    display: flex;
+    margin: 0;
+}
+
+.active, .title-container:hover{
+    background-color: #b7b7bd;
+    cursor: pointer;
+}
+
+.plus-minus-btn{
+    left: 90%;
+    position: relative;
+}
+
+.caption{
+    display: none;
+    background-color: white;
+    padding: 15px;
+    margin: 0;
+    overflow: hidden;
+}
+
+.slide-down{
+    animation-name: slide-down;
+    animation-duration: 2s; 
+}
+
+
+@keyframes slide-down{
+    0% {padding: 0px; height: 0px;}
+    70%{padding: 15px;}
+    100%{height: auto;}
+}
+
+
