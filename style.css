@@ -11,7 +11,7 @@
 .title-container{
     display: flex;
     margin: 0;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .active, .title-container:hover{
@@ -20,12 +20,14 @@
 }
 
 .plus-minus-btn{
-    float: right;   
+    left: 90%;
+    position: relative;
+    overflow: auto;   
 }
 
 .caption{
     background-color: white;
-    overflow: hidden;
+    overflow: auto;
     margin: 0;
     max-height: 0;
     transition: max-height 0.2s ease-out;
